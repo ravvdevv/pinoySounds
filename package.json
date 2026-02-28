@@ -1,0 +1,65 @@
+{
+  "name": "pinoysounds",
+  "displayName": "pinoySounds",
+  "description": "Plays sounds when errors/warnings are detected in the editor or terminal",
+  "version": "1.0.0",
+  "author": "ravvdevv",
+  "icon": "icon.jpg",
+  "publisher": "ravvdevv",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ravvdevv/pinoySounds.git"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pinoySounds.test",
+        "title": "pinoySounds: Test Error Sound"
+      }
+    ],
+    "configuration": {
+      "title": "pinoySounds",
+      "properties": {
+        "pinoySounds.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable error sounds"
+        },
+        "pinoySounds.playOnError": {
+          "type": "boolean",
+          "default": true,
+          "description": "Play sound when new errors appear"
+        },
+        "pinoySounds.playOnTerminalError": {
+          "type": "boolean",
+          "default": true,
+          "description": "Play sound when a terminal command exits with a non-zero code"
+        },
+        "pinoySounds.debounceMs": {
+          "type": "number",
+          "default": 1000,
+          "description": "Minimum milliseconds between sounds"
+        }
+      }
+    }
+  },
+  "files": [
+    "extension.js",
+    "soundeffect.mp3",
+    "ulol.mp3",
+    "icon.jpg",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT"
+}
