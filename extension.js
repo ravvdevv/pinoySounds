@@ -78,8 +78,8 @@ function initSounds(context) {
 
     // Randomize between soundeffect and ulol for errors
     errorSounds = [
-      path.join(extRoot, 'sound/soundeffect.mp3'),
-      path.join(extRoot, 'sound/ulol.mp3')
+      path.join(extRoot, 'sounds/soundeffect.mp3'),
+      path.join(extRoot, 'sounds/ulol.mp3')
     ];
 
     terminalSounds = errorSounds; // Also use error sounds for terminal

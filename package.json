@@ -55,8 +55,7 @@
   },
   "files": [
     "extension.js",
-    "soundeffect.mp3",
-    "ulol.mp3",
+    "sounds",
     "icon.jpg",
     "README.md",
     "LICENSE"
